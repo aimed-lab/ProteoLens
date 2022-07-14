@@ -1,0 +1,101 @@
+<html>
+<head>
+<link href="/css/gsimple.css" rel=stylesheet type="text/css">
+<title>ProteoLens: Biological Network Visual Data Exploration, Annotation, and Data Mining Tool</title>
+<script type="text/javascript" src="/javascript/iframes.js"></script>
+</head>
+<body class=corporate bgcolor="#ffffff" text="#000000" link="#0000CC" vlink="#800080" alink="#ff0000">
+<center>
+<!--#include virtual="/header.htm" -->
+<table border=0 cellpadding=0 cellspacing=0 width="98%">
+	<tr> 
+	<td width="180" valign="top">  </td>
+	<td class="pagetitle4"> ProteoLens<sup>TM</sup> 1.0 Main Page </td>
+	</tr>
+	<tr> 
+		<td valign="top">  </td>
+		<td height="5" valign="top"></td>
+	</tr>
+</table>
+<table border=0 cellpadding=0 cellspacing=0 width="98%">
+  <tr>
+ 	<td width="180" valign="top" style="background-color: #ffffff">  
+		<!--#include virtual="/service/tool_nav_menu.htm" --> </td>
+    <td style="background-color: #cccccc" width="1" valign="top"></td>
+    <td style="background-color: #ffffff" width="10" valign="top"></td>
+      <td valign="top">
+	    <p class="headtitle"><span class="pagetitle4">What is ProteoLens?</span></p>
+	    <ul>
+	      <li><span class="pagetitle4"> ProteoLens is a next-generation biological network visual data exploration, annotation, and mining tool.</span></li>
+          <li>It has many advanced features (listed below) that support  large-scale network-based integrated data analysis. </li>
+          <li>It is entirely free to use and distribute for non-commercial users. </li>
+	      <li>View the screenshot <a href="screenshot_web.gif">here</a> (61KB) </li>
+	    </ul>	    
+	    <p class="headtitle">Main Features</p>
+	    <ul>
+	      <li><strong>Robust Relational Database Engine support</strong> (Oracle 10g DBMS and PostgreSQL 8.x). You can directly query the data stored in your database using Oracle SQL or PostgreSQL, and immediately visualize the network display results.</li>
+          <li><strong>Standard GML file support</strong>. You can import and manipulate any network data using standard GML file formats in addition to structured data stored in the relational databases.</li>
+	      <li><strong>Flexible Annotation Data Mapping</strong>. You can use queries to specify and store&quot;associations&quot; between nodes/edges and node annotation/edge annotation. These associations can be used to visually annotate large displayed biological networks using node/edge shape, size, weight, color, and text. This is much more powerful than what is provided by custom-built annotation user-interfaces for complex visual network analysis. </li>
+	      <li><strong>Multiple Network Layout Choices</strong>. The tool comes with the same professional graph layout engine optimized for relational data. Several different types of layout such as organic and hierarchical methods can be configured. </li>
+	      <li><strong>Session and File Sharing.</strong> Analysis sessions can be saved for later retrieval. Network files can also be saved as layout files or image files for sharing.</li>
+        </ul>
+	    <p><span class="headtitle">Download the Software</span></p>
+	    <ul>
+	      <li>The current version is 1.08 (release date: February 21, 2008).</li>
+	      <li>Read and print out the freeware license agreement <a href="license.rtf">here</a>. You are not authorized to download or use the software unless you agree to this license agreement. </li>
+	      <li><strong>Minimum system requirements</strong>: Windows OS, 512MB, 1GHz CPU, Java Runtime Environment 1.42 and above (1.5 preferred).</li>
+            <li><strong>Separately pre-install JRE version 1.5 or higher</strong> (older versions of JRE may not be compatible with ProteoLens),
+   which can be freely downloaded from <a href="http://java.sun.com">http://java.sun.com</a></li>
+
+  <li><strong>Install ProteoLens</strong>
+with the following Windows 95/98/ME/2000/XP/Vista
+file (<a href="http://bio.informatics.iupui.edu/proteolens/download/proteolens108.msi">11MB</a>).
+</li>
+        </ul>
+	    <p><span class="headtitle">Documentation</span></p>
+	    <ul>
+	      <li>Installation Instruction: Open the .exe file, install it, and choose &quot;ProteoLens 1.0&quot; shortcut from the desktop to launch the application. </li>
+          <li>To create a database connection to Oracle, use &quot;thin&quot; driver only (&quot;oci8&quot; should work but is untested). Ask your database administrator for your oracle connection parameters. </li>
+	      <li>To view any database table, right click desired connected database icon, explore to the appropriate schema and table, then right click &quot;view&quot;.</li>
+	      <li>To create an data association, select data association from the data query window. Choose two attributes that represents (A,B) pair of the network edge, and give the association an intuitive name such as &quot;yeast protein interaction (nodeA, nodeB)&quot;. </li>
+	      <li>To create a network, choose from main menu, windows-&gt;network. Select the association that you created earlier for the network. For a complete network, enter &quot;default&quot; in both node filter's textbox and choose &quot;AND&quot; before pressing OK button. </li>
+	      <li>To add node or edge annotations, in the network layout window, choose node or edge, then &quot;add annotations&quot;. You should have created annotations using a pair of attributes beforehand, e.g., &quot;yeast protein name (node, gene symbol)&quot; (use query window and write SQL) for node annotations or &quot;yeast protein interaction confidence (nodeA, nodeB, score)&quot; (use query window and write SQL) for edge annotations. Annotations may be node size, shape, color, text label for nodes, or edge line type, color, and weight for edges. </li>
+	      <li>The <strong><em>ProteoLens User Manual</em></strong> can be downloaded from here (<a href="/proteolens/usermanual1.0.pdf">pdf</a>).</li>
+	      <li>The <strong><em>ProteoLens in 10 Minutes Guide</em></strong> can be downloaded from here (<a href="/proteolens/ProteoLensin10minutes.pdf">pdf</a>).</li>
+
+        </ul>
+	    <p><span class="headtitle">Acknowledgement</span></p>
+
+
+	    <p>Andrey Sivachenko, Ph.D., Scott H. Harrison, Ph. D., 
+Tianxiao Huan, Jake Y. Chen, Ph.D.</p>
+	    <p>Please use the reference 
+<br />
+<em>ProteoLens: a visual analytic tool for multi-scale database-driven biological network data mining</em> (manuscript under preparation)
+<br />
+and the web site <a href="http://www.proteolens.org/" target="_blank">http://www.proteolens.org/</a> while citing this work.</p>
+      <p>&nbsp; </p></td>
+
+  </tr>
+  <tr>
+    <td > </td>
+    <td style="background-color: #ffffff" valign="top"></td>
+    <td style="background-color: #ffffff" valign="top"></td>
+    <td valign="middle"><div class=footer> 
+      <div align="right"><small><!--#config timefmt="%B %d, %Y"-->Last Modified: 
+        <!--#flastmod file="index.stm"-->
+      </small> </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td> 
+    <td style="background-color: #ffffff" width="1" valign="top"></td>
+    <td style="background-color: #ffffff" width="1" valign="top"></td>
+    <td valign="middle"> <!--#include virtual="/bottom.htm" --></td>
+  </tr>
+</table>
+<!--#include virtual="/footer.htm" -->
+<!--#include file="/statcounter_h.htm" -->
+</center>
+</body>
+</html>

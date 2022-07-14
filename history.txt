@@ -1,0 +1,92 @@
+ProteoLens software version history
+
+1.1.1
+- Database support:
+  Support the network of 10000 nodes retriving from Oracle DB.
+- Network drawing:
+  Re-calculating the network layout,and seting the nodes always upon the edges.
+- Memory allocation problem:
+  Supporting large network *.jpg/*.png saving.
+- Minor bug fixes
+
+1.1
+- Layout support
+  nodes can be now drawn above crossing edges
+- general code cleanup
+- scalability bug fixes
+
+1.08
+
+- Database support:
+  Improvements to formation of SQL queries preliminary to a 1.1 release.
+
+1.06
+
+- Database support:
+  Access time significantly improved in some situations. 1) in the data browser (when 'view' 
+  operation is called upon a DB table in the filesystem browser), the actual submitted query
+  uses LIMIT clause to show small sample of the actual table data in the Table pane (use 'Retrive all'
+  menu option to override this behavior and retrieve complete result of query execution into 
+  the table pane); 2) when annotations are created/applied, only the relevant data are 
+  retrieved from the database table using the IN operator (i.e. selection is now performed on 
+  the database side by default).
+- Minor bug fixes
+
+1.05
+
+- Database support:
+  Database support extended to allow connections to PostgreSQL databases. Database
+  connection dialog now offers selection from Oracle (thin or oci8 drivers) and
+  PostgreSQL databases to connect to; only fully qualified DB connection parameters
+  (host, port, database - same parameters as required for Oracle thin connection) 
+  are accepted for PostgreSQL. 
+
+- Database support:
+  Bug in Oracle DB support fixed: non-standard (not fully capitalized) table
+  names are properly quoted in automatically generated queries (Oracle JDBC 
+  otherwise refuses to recognize MYSCHEMA.MyTable table, must be MYSCHEMA."MyTable")  
+
+- Loading/Saving networks: 
+  File type detection by file extension is abandoned. Load network and Save 
+  network menus now have sub-menu options enforcing saving to/loading from 
+  a particular format ('Save as -> GML file...', 'Save as -> List of node IDs...' 
+  etc). Thus the target file does not have to have the suggested extension anymore.
+
+- Loading networks:
+  Simple GML format verifier implemented. A very high-level and incomplete format 
+  check is performed for this release; the main purpose is to guard against an apparent
+  bug in the underlying 3rd party GML handler (y-Files), which freezes the system
+  if the file it attempts to read is seriously malformed. An error message pop-up is 
+  now displayed if the file claimed to be GML does not have top-level 'graph' token or
+  if brackets are not balanced. More subtle problems with file format are successfully caught
+  and reported by the generic IO handler.
+
+- Filter loading: 
+  Multiple file selection is allowed when loading filter list from file(s);
+  node IDs loaded from multiple selected files are merged into the single filter list.
+
+- XML session configuration reader: 
+  if a file specified as the source for a data association does not exist at the time 
+  of reading the configuration, the XML loader will pause and offer the user an option
+  of selecting the missing source file manually. 
+
+- XML session configuration reader/writer:
+  If a data association is defined on top of a local file, *and* if this file is located
+  in the local filesystem hierarchy below dedicated 'data' folder, then relative URI 
+  (with respect to this data folder) is stored instead of the absolute one. Correspondingly, 
+  when such data association is loaded from the XML configuration, the source data file URI is
+  resolved against the dedicated 'data' directory configured in the application. 
+  This feature simplifies data transfer: as long as the data files are placed into the 
+  same subfolder hierarchy under the dedicated 'data' folder, they can
+  be distributed along with ready-to-use XML configuration files defining data associations.
+  NOTE 1: data folder is not configurable in version 1.05 and is set to be 'data' in the
+  proteolens base installation directory.
+  NOTE 2: if the data folder is not defined/does not exist in the application
+  that reads XML configuration file but source file is specified relative to such
+  non-existent data folder, then the reader attempts to resolve the relative file locations
+  against the "user.dir" directory (working directory, or the directory where application
+  was started from). If the sought file does not exist in that directory either, the user will
+  be asked to locate file manually (see previous item in the history list).
+
+
+  

@@ -1,0 +1,126 @@
+<html>
+<head>
+<link href="/css/gsimple.css" rel=stylesheet type="text/css">
+<title>ProteoLens: Biological Network Visual Data Exploration, Annotation, and Data Mining Tool</title>
+<script type="text/javascript" src="/javascript/iframes.js"></script>
+<style type="text/css">
+<!--
+.style1 {font-size: small}
+-->
+</style>
+</head>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6980331-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<body class=corporate bgcolor="#ffffff" text="#000000" link="#0000CC" vlink="#800080" alink="#ff0000">
+<center>
+<!--#include virtual="/header.htm" -->
+<table border=0 cellpadding=0 cellspacing=0 width="98%">
+	<tr> 
+	<td width="180" valign="top">  </td>
+	<td class="pagetitle4"> ProteoLens<span class="style1"><sup>TM</sup></span> 1.0 Main Page </td>
+	</tr>
+	<tr> 
+		<td valign="top">  </td>
+		<td height="5" valign="top"></td>
+	</tr>
+</table>
+<table border=0 cellpadding=0 cellspacing=0 width="98%">
+  <tr>
+ 	<td width="180" valign="top" style="background-color: #ffffff">  
+		<!--#include virtual="/service/tool_nav_menu.htm" --> </td>
+    <td style="background-color: #cccccc" width="1" valign="top"></td>
+    <td style="background-color: #ffffff" width="10" valign="top"></td>
+      <td valign="top">
+	    <h3 class="headtitle"><span class="pagetitle4">What is ProteoLens?</span></h3>
+	    <ul>
+	      <li><span class="pagetitle4"> ProteoLens is a next-generation biological network visual data exploration, annotation, and mining tool.</span></li>
+          <li>It has many advanced features (listed below) that support  large-scale network-based integrated data analysis. </li>
+          <li>It is entirely free to use and distribute for non-commercial users. </li>
+	      <li>View the screenshot <a href="screenshot_web.gif">here</a> (61KB) </li>
+	    </ul>	    
+	    <h3 class="headtitle">Main Features</h3>
+	    <ul>
+	      <li><strong>Robust Relational Database Engine support</strong> (Oracle 10g/11g DBMS and PostgreSQL 8.x). You can directly query the data stored in your database using Oracle SQL or PostgreSQL, and immediately visualize the network display results.</li>
+          <li><strong>Standard GML file support</strong>. You can import and manipulate any network data using standard GML file formats in addition to structured data stored in the relational databases.</li>
+	      <li><strong>Flexible Annotation Data Mapping</strong>. You can use queries to specify and store&quot;associations&quot; between nodes/edges and node annotation/edge annotation. These associations can be used to visually annotate large displayed biological networks using node/edge shape, size, weight, color, and text. This is much more powerful than what is provided by custom-built annotation user-interfaces for complex visual network analysis. </li>
+	      <li><strong>Multiple Network Layout Choices</strong>. The tool comes with the same professional graph layout engine optimized for relational data. Several different types of layout such as organic and hierarchical methods can be configured. </li>
+	      <li><strong>Session and File Sharing.</strong> Analysis sessions can be saved for later retrieval. Network files can also be saved as layout files or image files for sharing.</li>
+        </ul>
+	    <h3><span class="headtitle">Download the Software</span></h3>
+	    <ul>
+	      <li>The current version is 1.11 (release date: August 18th, 2008). The change log can be found <a href="history.txt">here</a> (in plain text format)</li>
+	      <li>Read and print out the freeware license agreement <a href="license.rtf">here</a>. You are not authorized to download or use the software unless you agree to this license agreement. </li>
+	      <li><strong>Minimum system requirements</strong>: Windows OS, 1GB, 1.8GHz CPU, Java Runtime Environment 1.5 and above.</li>
+          <li><strong>Separately pre-install JRE version 1.5 or higher</strong> (older versions of JRE may not be compatible with ProteoLens),
+   which can be freely downloaded from <a href="http://www.java.com">http://www.java.com</a></li>
+
+  <li><strong>Install ProteoLens</strong>
+with the following Windows 95/98/ME/2000/XP/Vista
+file (<a href="download/ProteoLens_1.1.1.msi">8.4MB</a>).</li>
+        </ul>
+	    <h3><span class="headtitle">Documentation</span></h3>
+	    <ul>
+	      <li>Installation Instruction: Open the .exe file, install it, and choose &quot;ProteoLens 1.1&quot; shortcut from the desktop to launch the application. </li>
+          <li>To create a database connection to Oracle, use &quot;thin&quot; driver only (&quot;oci8&quot; should work but is untested). Ask your database administrator for your oracle connection parameters. </li>
+	      <li>To view any database table, right click desired connected database icon, explore to the appropriate schema and table, then right click &quot;view&quot;.</li>
+	      <li>To create an data association, select data association from the data query window. Choose two attributes that represents (A,B) pair of the network edge, and give the association an intuitive name such as &quot;yeast protein interaction (nodeA, nodeB)&quot;. </li>
+	      <li>To create a network, choose from main menu, windows-&gt;network. Select the association that you created earlier for the network. For a complete network, enter &quot;default&quot; in both node filter's textbox and choose &quot;AND&quot; before pressing OK button. </li>
+	      <li>To add node or edge annotations, in the network layout window, choose node or edge, then &quot;add annotations&quot;. You should have created annotations using a pair of attributes beforehand, e.g., &quot;yeast protein name (node, gene symbol)&quot; (use query window and write SQL) for node annotations or &quot;yeast protein interaction confidence (nodeA, nodeB, score)&quot; (use query window and write SQL) for edge annotations. Annotations may be node size, shape, color, text label for nodes, or edge line type, color, and weight for edges. </li>
+	      <li>The <strong><em>ProteoLens User Manual</em></strong> can be downloaded from here (<a href="/proteolens/usermanual1.0.pdf">pdf</a>).</li>
+	      <li>The <strong><em>ProteoLens in 10 Minutes Guide</em></strong> can be downloaded from here (<a href="/proteolens/ProteoLensin10minutes.pdf">pdf</a>).</li>
+        </ul>
+	    <h3><span class="headtitle">Acknowledgement</span> / Citing this Work</h3>
+	    <p>Tianxiao Huan, Andrey Sivachenko, Scott H. Harrison, and Jake Y. Chen (2008) <em><a href="http://www.biomedcentral.com/1471-2105/9/S9/S5">ProteoLens: a visual analytic tool for multi-scale database-driven biological network data mining</a></em> (2008) BMC Bioinformatics, Vol. 9(Suppl 9): S5 (<a href="proteolens_BMCBIO08.pdf">pdf</a> download)</p>
+	    <h3><span class="headtitle">Join User/Development Group</span><br />
+        </h3>
+	    <table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0 align="center">
+  <tr><td>
+  <img src="http://groups.google.com/groups/img/3nb/groups_bar.gif" alt="Google Groups" width=132
+         height=26 align="absmiddle">
+  </td>
+  </tr>
+  <tr>
+    <td style="padding-left: 5px">
+  <b>Subscribe to proteolens mailing list</b></td>
+  </tr>
+  <form action="http://groups.google.com/group/proteolens/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  Email: <input type=text name=email>
+  <input type=submit name="sub" value="Subscribe">
+  </td></tr>
+</form>
+<tr><td align=right>
+  <a href="http://groups.google.com/group/proteolens">Visit this group</a>
+</td></tr>
+</table>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td > </td>
+    <td style="background-color: #ffffff" valign="top"></td>
+    <td style="background-color: #ffffff" valign="top"></td>
+    <td valign="middle"><div class=footer> 
+      <div align="right"><small><!--#config timefmt="%B %d, %Y"-->Last Modified: 
+        <!--#flastmod file="index.stm"-->
+      </small> </div>
+    </div></td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td> 
+    <td style="background-color: #ffffff" width="1" valign="top"></td>
+    <td style="background-color: #ffffff" width="1" valign="top"></td>
+    <td valign="middle"> <!--#include virtual="/bottom.htm" --></td>
+  </tr>
+</table>
+<!--#include virtual="/footer.htm" -->
+<!--#include file="/statcounter_h.htm" -->
+</center>
+</body>
+</html>
